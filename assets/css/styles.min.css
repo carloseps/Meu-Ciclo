@@ -266,6 +266,12 @@ main {
         font-size: 20px!important;
         text-align: justify!important;
     }
+    .title-planos-texto h1 {
+        font-size: 40px!important;
+        text-align: center!important;
+        text-transform: uppercase;
+        height: 100%;
+    }
     .planos-foto-bg {
         display: block;
         width: 100%;
@@ -447,6 +453,11 @@ main {
     z-index: 25
 }
 
+.title-planos-texto h1 {
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
 .title-planos-texto li {
     color: #542c6c;
     font-weight: 600;
@@ -506,7 +517,7 @@ main {
 .caixa-plano li {
     text-transform: none;
     font-weight: 500;
-    margin: 2px;
+    margin-bottom: 10px;
 }
 
 .caixa-plano-2 h1 {
@@ -535,7 +546,33 @@ main {
 .caixa-plano-2 li {
     text-transform: none;
     font-weight: 500;
-    margin: 2px;
+    margin-bottom: 10px;
+}
+
+.container-plano .preco h2 {
+    font-size: 15px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: line-through;
+}
+
+.container-plano .preco h1 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.container-plano-2 .preco h2 {
+    margin: 0 auto;
+    max-width: fit-content;
+    text-align: center;
+    text-decoration: line-through;
+}
+
+.container-plano-2 .preco h1 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
 }
 
 .container-plano-2 {
