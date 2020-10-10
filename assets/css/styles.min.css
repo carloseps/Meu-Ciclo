@@ -40,6 +40,13 @@ img {
     width: 100%
 }
 
+.container-bg-planos {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 62rem;
+    width: 100%
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -47,13 +54,8 @@ main {
 }
 
 #sobre-gradient {
-    background: rgb(72, 36, 93);
-    background: linear-gradient(0deg, rgba(72, 36, 93, 1) 9%, rgba(102, 54, 131, 1) 100%);
-}
-
-#sobre-gradient #sobre-foto-em-pe {
-    display: none;
-    width: 26rem;
+    background: rgb(71, 49, 95);
+    background: linear-gradient(0deg, rgba(71, 49, 95, 1) 9%, rgba(128, 88, 152, 1) 100%);
 }
 
 .foto-thereza-sobre-mobile {
@@ -62,7 +64,7 @@ main {
     left: 0;
     position: relative;
     top: 0;
-    width: 50%;
+    width: 60%;
     opacity: 1;
 }
 
@@ -94,7 +96,7 @@ main {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 55
+    z-index: 999
 }
 
 @media (min-width: 576px) {
@@ -244,16 +246,6 @@ main {
     bottom: 100% auto;
 }
 
-.foto-em-pe-mobile {
-    margin: 0 auto;
-    display: none;
-    left: 0;
-    position: relative;
-    top: 0;
-    width: 100%;
-    opacity: 1;
-}
-
 @media (min-width: 992px) {
     .inicio {
         background: none;
@@ -271,6 +263,9 @@ main {
         text-align: center!important;
         text-transform: uppercase;
         height: 100%;
+    }
+    .bg-plano {
+        display: none!important;
     }
     .planos-foto-bg {
         display: block;
@@ -294,13 +289,9 @@ main {
     .foto-thereza-sobre {
         display: block;
     }
-    .plano {
-        background: rgb(255, 255, 255);
-        background: linear-gradient(0deg, rgba(255, 255, 255, 0.7000) 14%, rgba(209, 208, 208, 0.9000) 56%)!important;
-    }
     .plano .planos-foto-bg {
         display: block;
-        position: fixed;
+        position: relative;
         width: 100%;
         z-index: -25;
     }
@@ -333,7 +324,7 @@ main {
 .sobre {
     height: 100%;
     overflow: hidden;
-    padding: 2rem 0px;
+    padding: 3.8rem 0px;
     text-align: center;
 }
 
@@ -365,21 +356,14 @@ main {
 }
 
 @media (min-width: 992px) {
-    .sobre .sobre-logo {
-        margin: 0px
-    }
     .sobre .sobre-topicos-texto li {
         padding: 0px
     }
 }
 
-.contato {
-    padding: 3rem 0px
-}
-
 @media (min-width: 756px) {
     .foto-thereza-sobre-mobile {
-        width: 60%;
+        width: 50%;
     }
     .foto-thereza-sobre {
         display: none;
@@ -405,33 +389,10 @@ main {
         font-weight: 300;
         padding: 0px 1rem
     }
-    .contato {
-        display: flex;
-        justify-content: center
-    }
 }
 
-@media (min-width: 992px) {
-    .contato {
-        justify-content: flex-start;
-        padding-top: 0px
-    }
-}
-
-.plano {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 14%, rgba(209, 208, 208, 1) 56%);
-    display: flex;
-    font-size: 1.125rem;
-    font-weight: 300;
-    min-height: calc(100vh - 3.5rem);
-    overflow: hidden;
-    padding: 4rem 0px;
-    position: relative;
-    text-align: center;
-}
-
-.plano .container {
+.bg-plano {
+    display: block;
     width: 100%;
 }
 
@@ -474,8 +435,7 @@ main {
 }
 
 .plano {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 14%, rgba(209, 208, 208, 1) 56%);
+    background: none;
     display: flex;
     font-size: 1.125rem;
     font-weight: 600;
@@ -730,7 +690,6 @@ main {
 
 .footer .footer-redes-sociais li a:hover svg {
     transform: scale(1.375);
-    color: #542c6c;
 }
 
 @media (min-width: 768px) {
