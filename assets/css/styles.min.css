@@ -160,9 +160,6 @@ main {
     .sobre h1 {
         font-size: 20px;
     }
-    .texto-sobre li {
-        font-size: 15px;
-    }
     .texto-sobre p {
         font-size: 13px;
     }
@@ -337,7 +334,7 @@ main {
 
 .texto-sobre {
     margin: 0 auto;
-    width: 78%;
+    width: 90%;
     color: #fff;
 }
 
@@ -346,13 +343,6 @@ main {
     margin-top: 10px;
     font-weight: 300;
     font-size: 15px;
-}
-
-.texto-sobre li {
-    margin: 0 auto;
-    list-style: none;
-    font-weight: 300;
-    padding: 0px 1rem
 }
 
 @media (min-width: 992px) {
@@ -383,11 +373,6 @@ main {
         margin-top: 10px;
         font-weight: 300;
         font-size: 18px;
-    }
-    .texto-sobre li {
-        list-style: none;
-        font-weight: 300;
-        padding: 0px 1rem
     }
 }
 
