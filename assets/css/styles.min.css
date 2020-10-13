@@ -64,7 +64,7 @@ main {
     left: 0;
     position: relative;
     top: 0;
-    width: 60%;
+    width: 40%;
     opacity: 1;
 }
 
@@ -285,6 +285,7 @@ main {
     }
     .foto-thereza-sobre {
         display: block;
+        width: 85%;
     }
     .plano .planos-foto-bg {
         display: block;
