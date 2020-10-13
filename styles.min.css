@@ -1,0 +1,703 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    outline: none;
+    padding: 0px
+}
+
+body,
+input,
+button,
+textarea {
+    pointer-events: all;
+    color: #444;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+ul {
+    list-style: inside
+}
+
+img {
+    border: none
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 62rem;
+    padding: 0px 1rem;
+    width: 100%
+}
+
+.container-bg-planos {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 62rem;
+    width: 100%
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.5rem
+}
+
+#sobre-gradient {
+    background: rgb(71, 49, 95);
+    background: linear-gradient(0deg, rgba(71, 49, 95, 1) 9%, rgba(128, 88, 152, 1) 100%);
+}
+
+.foto-thereza-sobre-mobile {
+    margin: 0 auto;
+    display: block;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 60%;
+    opacity: 1;
+}
+
+.foto-thereza-sobre {
+    margin-left: 20px;
+    display: none;
+    width: 26rem;
+}
+
+@media (min-width: 992px) {
+    #sobre-gradient {
+        align-items: flex-end;
+        display: flex
+    }
+    #sobre-gradient .foto-thereza-sobre {
+        display: block;
+    }
+    .foto-thereza-sobre-mobile {
+        display: none;
+    }
+}
+
+.navbar {
+    background-color: #fff;
+    border-bottom: 0.0625rem solid rgba(68, 68, 68, 0.25);
+    height: 3.5rem;
+    left: 0;
+    padding: 0.75rem 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999
+}
+
+@media (min-width: 576px) {
+    .navbar {
+        padding: 0px
+    }
+}
+
+.navbar .container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-between
+}
+
+.navbar .navbar-brand {
+    align-items: center;
+    display: flex
+}
+
+.navbar .navbar-brand img {
+    display: block;
+    height: 2rem;
+    margin: 0
+}
+
+.navbar .navbar-brand {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+    text-transform: uppercase
+}
+
+.menu {
+    background-color: transparent;
+    border: none;
+}
+
+.linha {
+    background-color: rgb(230, 110, 79);
+    border-radius: 999px;
+    height: 0.25rem;
+    width: 1.875rem
+}
+
+.linha:nth-child(2) {
+    margin: 0.25rem 0px
+}
+
+@media (min-width: 576px) {
+    .foto-thereza-sobre {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .inicio {
+        min-height: fit-content!important;
+    }
+    .sobre h1 {
+        font-size: 20px;
+    }
+    .texto-sobre p {
+        font-size: 13px;
+    }
+}
+
+.navbar .navlinks {
+    display: none;
+    color: #542c6c;
+    font-size: 1rem;
+    font-weight: 500;
+    flex-basis: 100%;
+    height: 100%;
+    text-align: center;
+    text-transform: uppercase
+}
+
+.navbar .navlinks li {
+    font-weight: 600;
+    display: flex;
+    justify-content: center
+}
+
+.navbar .navlinks li a {
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem
+}
+
+@media (min-width: 576px) {
+    .navbar .navlinks li a {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        margin: 0;
+        padding: 0px 0.75rem;
+        transition: background-color 0.2s linear, color 0.2s linear
+    }
+    .navbar .navlinks li a:hover {
+        background-color: rgba(0, 0, 0, 0.075);
+        color: #e66e4f
+    }
+}
+
+@media (max-width: 575px) {
+    .navbar.active {
+        height: auto
+    }
+    .navbar.active .navlinks {
+        display: block
+    }
+}
+
+.inicio {
+    align-items: center;
+    color: #542c6c;
+    display: flex;
+    font-size: 1.125rem;
+    font-weight: 600;
+    min-height: calc(100vh - 3.5rem);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.inicio .inicio-foto-bg {
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 113%;
+    z-index: -1
+}
+
+.inicio .inicio-foto-bg-cut {
+    display: block;
+    top: 0;
+    width: 100%;
+}
+
+.container-foto-mobile {
+    margin-top: 20px;
+    bottom: 100% auto;
+}
+
+@media (min-width: 992px) {
+    .inicio {
+        background: none;
+        overflow: hidden;
+    }
+    .title-planos-texto {
+        width: 50%;
+    }
+    .title-planos-texto li {
+        font-size: 20px!important;
+        text-align: justify!important;
+    }
+    .title-planos-texto h1 {
+        font-size: 40px!important;
+        text-align: center!important;
+        text-transform: uppercase;
+        height: 100%;
+    }
+    .bg-plano {
+        display: none!important;
+    }
+    .planos-foto-bg {
+        display: block;
+        width: 100%;
+    }
+    .inicio .container-inicio-foto-bg {
+        height: 100%;
+    }
+    .inicio .inicio-foto-bg {
+        display: block;
+        width: 100%;
+    }
+    .inicio .inicio-foto-bg-cut {
+        display: none;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 113%;
+        z-index: -1
+    }
+    .foto-thereza-sobre {
+        display: block;
+    }
+    .plano .planos-foto-bg {
+        display: block;
+        position: relative;
+        width: 100%;
+        z-index: -25;
+    }
+    .footer .footer-foto-bg-cut {
+        display: none!important;
+        left: 0;
+        top: 0;
+        width: 113%;
+        z-index: -1
+    }
+    .footer .footer-foto-bg {
+        display: block!important;
+        width: 100%;
+    }
+}
+
+.footer {
+    background: none;
+    overflow: hidden;
+}
+
+.footer .footer-foto-bg {
+    display: none;
+    left: 0;
+    top: 0;
+    width: 113%;
+    z-index: -1
+}
+
+.sobre {
+    height: 100%;
+    overflow: hidden;
+    padding: 3.8rem 0px;
+    text-align: center;
+}
+
+.sobre h1 {
+    margin-top: 18px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.texto-sobre {
+    margin: 0 auto;
+    width: 90%;
+    color: #fff;
+}
+
+.texto-sobre p {
+    text-align: justify;
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+@media (min-width: 992px) {
+    .sobre .sobre-topicos-texto li {
+        padding: 0px
+    }
+}
+
+@media (min-width: 756px) {
+    .foto-thereza-sobre-mobile {
+        width: 50%;
+    }
+    .foto-thereza-sobre {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) {
+    .texto-sobre {
+        width: 68%;
+        color: #fff;
+    }
+    .sobre h1 {
+        font-size: 30px;
+    }
+    .texto-sobre p {
+        text-align: justify;
+        margin-top: 10px;
+        font-weight: 300;
+        font-size: 18px;
+    }
+}
+
+.bg-plano {
+    display: block;
+    width: 100%;
+}
+
+.planos-foto-bg {
+    display: none;
+    left: 0;
+    top: 0;
+    width: 113%;
+    z-index: -1
+}
+
+.title-planos-texto {
+    margin-bottom: 40px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    z-index: 25
+}
+
+.title-planos-texto h1 {
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.title-planos-texto li {
+    color: #542c6c;
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+    list-style: none;
+    margin: 1rem 0px;
+}
+
+.logo-title-planos {
+    display: block;
+    height: 2rem;
+    margin: 0 auto;
+}
+
+.plano {
+    background: none;
+    display: flex;
+    font-size: 1.125rem;
+    font-weight: 600;
+    min-height: calc(100vh - 3.5rem);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    color: #542c6c;
+    flex-direction: column;
+}
+
+.caixas-planos div {
+    display: flex;
+}
+
+.caixa-plano h1 {
+    color: #542c6c;
+    font-weight: 800;
+    font-size: 44px;
+}
+
+.caixa-plano h2 {
+    color: #542c6c;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0 auto;
+    width: 70%;
+    padding-bottom: 8px;
+}
+
+.caixa-plano p {
+    font-size: 15px;
+    text-transform: none;
+    padding-left: 20px;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+.caixa-plano li {
+    text-transform: none;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.caixa-plano-2 h1 {
+    color: #542c6c;
+    font-weight: 800;
+    font-size: 44px;
+}
+
+.caixa-plano-2 h2 {
+    color: #542c6c;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0 auto;
+    width: 70%;
+    padding-bottom: 8px;
+}
+
+.caixa-plano-2 p {
+    font-size: 15px;
+    text-transform: none;
+    padding-left: 20px;
+    margin: 0 auto;
+    font-weight: 300;
+}
+
+.caixa-plano-2 li {
+    text-transform: none;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.container-plano .preco h2 {
+    font-size: 15px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: line-through;
+}
+
+.container-plano .preco h1 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.container-plano-2 .preco h2 {
+    margin: 0 auto;
+    max-width: fit-content;
+    text-align: center;
+    text-decoration: line-through;
+}
+
+.container-plano-2 .preco h1 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.container-plano-2 {
+    font-size: 16px;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container-plano-2 ul {
+    list-style: none;
+}
+
+.container-plano h3 {
+    width: 70%;
+    font-weight: 800;
+    margin: 0 auto;
+    text-align: center;
+    color: #542c6c;
+}
+
+.container-plano-2 h3 {
+    width: 70%;
+    font-weight: 800;
+    margin: 0 auto;
+    text-align: center;
+    color: #542c6c;
+}
+
+.container-plano h4 {
+    font-weight: 800;
+    margin: 25px;
+    text-align: center;
+}
+
+.container-plano-2 h4 {
+    font-weight: 800;
+    margin: 25px;
+    text-align: center;
+}
+
+.container-plano {
+    font-size: 16px;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container-plano ul {
+    list-style: none;
+}
+
+.plano div .caixa-plano {
+    border: none;
+    border-style: solid;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin: 0px auto;
+    min-width: 7rem;
+    width: 100%;
+    padding: 0.75rem 0.875rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background-color 0.2s linear;
+    background: rgb(233, 94, 59);
+    background: linear-gradient(90deg, rgba(233, 94, 59, 1) 0%, rgba(230, 110, 79, 1) 50%, rgba(233, 94, 59, 1) 100%);
+    border-color: transparent;
+    color: #fff
+}
+
+.plano div .caixa-plano-2 {
+    border: none;
+    border-style: solid;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin: 0px auto;
+    min-width: 7rem;
+    width: 100%;
+    padding: 0.75rem 0.875rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background-color 0.2s linear;
+    background: rgb(233, 94, 59);
+    background: linear-gradient(90deg, rgba(233, 94, 59, 1) 0%, rgba(230, 110, 79, 1) 50%, rgba(233, 94, 59, 1) 100%);
+    border-color: transparent;
+    color: #fff
+}
+
+.botao-contato {
+    background: #fff;
+    color: #542c6c;
+    border: none;
+    border-width: 0.125rem;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-top: 20px;
+    min-width: 11.25rem;
+    padding: 1.4rem 0.875rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background-color 0.2s linear
+}
+
+.botao-contato:hover {
+    background: #542c6c;
+    color: #fff;
+}
+
+.footer {
+    background: rgb(230, 110, 79);
+    background: linear-gradient(0deg, rgb(230, 110, 79) 0%, #fd724f 100%);
+}
+
+.footer .footer-foto-bg-cut {
+    display: block;
+    width: 100%;
+}
+
+.footer .container {
+    padding: 2rem
+}
+
+.footer .footer-redes-sociais {
+    display: flex;
+    list-style: none;
+    justify-content: center
+}
+
+.footer .footer-redes-sociais li a {
+    align-items: center;
+    background-color: #d2d2d2;
+    border-radius: 1.5rem;
+    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.25);
+    display: flex;
+    height: 5rem;
+    justify-content: center;
+    margin: 1rem;
+    width: 5rem;
+    transition: background-color 0.2s linear
+}
+
+.footer .footer-redes-sociais li a svg {
+    color: rgb(230, 110, 79);
+    height: 1.875rem;
+    transition: transform 0.2s linear;
+    width: 1.875rem;
+}
+
+.footer .footer-redes-sociais li a:hover {
+    background-color: #fff;
+}
+
+.footer .footer-redes-sociais li a:hover svg {
+    transform: scale(1.375);
+}
+
+@media (min-width: 768px) {
+    .navbar .navlinks {
+        display: flex !important;
+        flex-basis: auto
+    }
+    .menu {
+        display: none !important
+    }
+    .footer .footer-redes-sociais li a {
+        height: 6.25rem;
+        width: 6.25rem
+    }
+    .footer .footer-redes-sociais li a svg {
+        height: 2.5rem;
+        width: 2.5rem
+    }
+}
+
+.footer .footer-copyright {
+    color: #fff;
+    font-weight: 300;
+    margin-top: 1rem;
+    text-align: center
+}
