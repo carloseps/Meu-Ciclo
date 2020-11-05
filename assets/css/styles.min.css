@@ -437,6 +437,11 @@ main {
     display: flex;
 }
 
+.esgotado-planos {
+    margin: 0 auto;
+    width: 75%;
+}
+
 .caixa-plano h1 {
     color: #542c6c;
     font-weight: 800;
@@ -693,6 +698,9 @@ main {
     .footer .footer-redes-sociais li a svg {
         height: 2.5rem;
         width: 2.5rem
+    }
+    .esgotado-planos {
+        width: 55%;
     }
 }
 
