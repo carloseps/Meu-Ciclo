@@ -64,7 +64,7 @@ main {
     left: 0;
     position: relative;
     top: 0;
-    width: 60%;
+    width: 40%;
     opacity: 1;
 }
 
@@ -285,6 +285,7 @@ main {
     }
     .foto-thereza-sobre {
         display: block;
+        width: 85%;
     }
     .plano .planos-foto-bg {
         display: block;
@@ -434,6 +435,11 @@ main {
 
 .caixas-planos div {
     display: flex;
+}
+
+.esgotado-planos {
+    margin: 0 auto;
+    width: 75%;
 }
 
 .caixa-plano h1 {
@@ -692,6 +698,9 @@ main {
     .footer .footer-redes-sociais li a svg {
         height: 2.5rem;
         width: 2.5rem
+    }
+    .esgotado-planos {
+        width: 55%;
     }
 }
 
