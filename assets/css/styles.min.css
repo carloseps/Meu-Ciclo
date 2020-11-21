@@ -458,6 +458,14 @@ main {
     padding-bottom: 8px;
 }
 
+.caixa-plano h5 {
+    margin-top: 10px;
+    color: whitesmoke;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: center;
+}
+
 .caixa-plano p {
     font-size: 15px;
     text-transform: none;
@@ -485,6 +493,14 @@ main {
     margin: 0 auto;
     width: 70%;
     padding-bottom: 8px;
+}
+
+.caixa-plano-2 h5 {
+    margin-top: 10px;
+    color: whitesmoke;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: center;
 }
 
 .caixa-plano-2 p {
